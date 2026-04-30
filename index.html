@@ -3,90 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Technicienne Informatique SISR</title>
+    <title>Projets | Prénom Nom</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <nav>
-        <div class="logo">PORTFOLIO_SISR</div>
+        <div class="logo">PORTFOLIO SISR</div>
+        <div class="menu-toggle" id="mobile-menu"><span></span><span></span><span></span></div>
         <div class="nav-links">
-            <a href="#about">Moi</a>
-            <a href="#parcours">Parcours</a>
-            <a href="#projets">Projets</a>
-            <button class="theme-toggle" id="themeBtn">
-                <span id="themeText">🌙 Mode Sombre</span>
-            </button>
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À Propos</a>
+            <a href="parcours.html">Parcours</a>
+            <a href="projets.html" class="active">Projets</a>
+            <a href="synthese.html">Synthèse</a>
+            <a href="veille.html">Veille</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1>Prénom <span class="highlight">Nom</span></h1>
-        <div class="typewriter">Technicienne Informatique en Alternance</div>
-        <p class="hero-desc">Étudiante en <span class="highlight">BTS SIO SISR 2ème année</span>.</p>
-        <div class="btn-container">
-            <a href="CV_Technicienne_SISR.pdf" class="btn btn-primary" download>Télécharger CV</a>
-            <a href="#contact" class="btn btn-secondary">Contact</a>
-        </div>
-    </header>
-
-    <section id="about">
-        <h2>À propos de moi</h2>
+    <div class="container">
+        <h2>Mes Projets Techniques</h2>
         <div class="card">
-            <p>Spécialisée en administration réseaux et cybersécurité.</p>
-            <div class="tags">
-                <span class="tag">Cisco (CCNA)</span> <span class="tag">Windows Server</span> <span class="tag">Linux</span>
-            </div>
+            <h3>Segmentation VLAN</h3>
+            <p>Mise en place d'une infrastructure isolée sous Cisco Packet Tracer.</p>
+            <a href="pdf/projet_vlan.pdf" class="btn">Télécharger la fiche (PDF)</a>
         </div>
-    </section>
-
-    <section id="parcours">
-        <h2>Parcours & Expérience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Technicienne Réseaux (Alternance)</h3>
-                <p class="highlight">2024 - Présent | [Entreprise]</p>
-            </div>
-            <div class="timeline-item">
-                <h3>BTS SIO SISR</h3>
-                <p class="highlight">2023 - 2025 | [École]</p>
-            </div>
+        <div class="card">
+            <h3>Serveur de Supervision Zabbix</h3>
+            <p>Installation et configuration d'un serveur de monitoring sous Debian.</p>
+            <a href="pdf/zabbix.pdf" class="btn">Télécharger la fiche (PDF)</a>
         </div>
-    </section>
-
-    <section id="projets">
-        <h2>Mes Projets SISR</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Segmentation VLAN</h3>
-                <a href="Projet_VLAN.pdf" class="btn btn-secondary" download>Fiche PDF</a>
-            </div>
-            <div class="card">
-                <h3>Supervision GLPI</h3>
-                <a href="Projet_GLPI.pdf" class="btn btn-secondary" download>Fiche PDF</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="synthese">
-        <h2>Tableau de Synthèse</h2>
-        <div class="table-wrapper">
-            <table>
-                <tr><th>Compétence</th><th>Réalisation</th></tr>
-                <tr><td>Gérer le patrimoine</td><td>Inventaire GLPI</td></tr>
-                <tr><td>Mode projet</td><td>Migration AD</td></tr>
-            </table>
-        </div>
-        <div class="center">
-            <a href="Tableau_Synthese.pdf" class="btn btn-primary" download>Tableau complet (PDF)</a>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <p>📧 votre.nom@email.com</p>
-        <p>&copy; 2024 Portfolio SISR</p>
-    </footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
